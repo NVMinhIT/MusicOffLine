@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backrop">
+
+        <ImageButton
+            android:id="@+id/image_button_down"
+            android:layout_width="24dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/down"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="12dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_alarm"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/ic_alarm"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_marginEnd="12dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/image_shuffle"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/shuffle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="10dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/image_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="120dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/ic_play"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/img_play"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/image_next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="ContentDescription"
+            android:layout_marginEnd="120dp" />
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/repeat"
+            android:id="@+id/image_repeat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="ContentDescription"
+            android:layout_marginEnd="10dp" />
+
+        <ImageView
+            android:id="@+id/image_dots"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_three_dots"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_artist"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageViewDisc"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/compacc_disc"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_dots"
+            tools:ignore="ContentDescription" />
+
+        <SeekBar
+            android:id="@+id/seekbar_song"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:progressTint="@color/progresstint"
+            android:theme="@style/MySeekBarTheme"
+            android:thumbTint="@color/colorSeekbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/text_view_start"
+            app:layout_constraintRight_toLeftOf="@+id/text_view_end"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/text_track_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/text_view_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:gravity="center"
+            android:textColor="#E0E0E0"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_track_title"
+
+            />
+
+        <TextView
+            android:id="@+id/text_view_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="80dp"
+            android:text="@string/textstart"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="80dp"
+            android:text="@string/textend"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.musiced.screen.playmusic.PlayMusicFragment" />
+    </data>
+</layout>
